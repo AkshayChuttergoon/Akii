@@ -15,6 +15,14 @@ namespace BatteryMonitor
         public Form1()
         {
             InitializeComponent();
+            Task.Delay(new TimeSpan(0, 0, 15)).ContinueWith(o => { closeApp(); });
+          
+
+        }
+
+        private void closeApp()
+        {
+            throw new NotImplementedException();
         }
 
         private void Form1_Load(object sender, EventArgs e)
