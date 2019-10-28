@@ -15,7 +15,7 @@ namespace BatteryMonitor
         public Form1()
         {
             InitializeComponent();
-            Task.Delay(new TimeSpan(0, 0, 15)).ContinueWith(o =>{ closeApp(); } );
+            Task.Delay(new TimeSpan(0, 0, 15)).ContinueWith(o => { closeApp(); });
             label7.Text = GetBatteryStatus().ToString() + '%';
             label8.Text = GetPowerSource();
             
